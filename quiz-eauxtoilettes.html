@@ -351,23 +351,21 @@
     // │  ÉTAPE 1 — Colle ici ta config Firebase             │
     // │  (tu trouveras ces valeurs dans la console Firebase) │
     // └─────────────────────────────────────────────────────┘
-    const firebaseConfig = {
-      apiKey:            "AIzaSyDabdYysD2HOR8AAQvmbt-fH69a6eg9MHo",
-      authDomain:        "projet-hefp---fumoir.firebaseapp.com",
-      projectId:         "projet-hefp---fumoir",
-      storageBucket:     "projet-hefp---fumoir.firebasestorage.app",
-      messagingSenderId: "70755981235",
-      appId:             "1:70755981235:web:4ce5cdc62cd6d732531dc6"
-    };
+const firebaseConfig = {
+  // ... vos configurations Firebase ...
+};
 
-    // Init Firebase
-    let db = null;
-    try {
-      firebase.initializeApp(firebaseConfig);
-      db = firebase.firestore();
-    } catch(e) { console.warn("Erreur Firebase:", e); }
+let db = null;
+try {
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.firestore();
+} catch(e) { console.warn("Erreur Firebase:", e); }
 
-    const COLLECTION = "scores_toilettes";
+const COLLECTION = "scores_toilettes"; // Ici, c'est pour les toilettes
+
+// Votre code lira ou écrira les scores pour les toilettes
+// Par exemple : db.collection(COLLECTION).get().then(snapshot => { /* ... */ });
+
 
     // ─────────────── QUESTIONS ───────────────
     // Distribution correcte : B(1), D(3), A(0), C(2), B(1), D(3), A(0), C(2), B(1), D(3)

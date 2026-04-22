@@ -376,68 +376,68 @@
     // ─────────────── QUESTIONS ───────────────
     // Distribution correcte : B(1), D(3), A(0), C(2), B(1), D(3), A(0), C(2), B(1), D(3)
     const questions = [
-      { // correct = B (1)
-        text: "Coucou. Quelle quantité d'eau consomme une ancienne chasse d'eau (simple, sans double commande) à chaque utilisation ?",
-        options: ["3 à 4 litres", "9 à 12 litres", "20 à 25 litres", "1 à 2 litres"],
-        correct: 1,
-        explanation: "Les anciennes chasses d'eau consomment entre 9 et 12 litres par utilisation. Les modèles modernes à double commande (3L/6L) permettent de réduire cette consommation de plus de 50 %."
+      { // correct = C (2)
+        text: "Combien de litres d’eau peut économiser une toilette avec une double chasse par an par personne ?",
+        options: ["600 litres", "1000 litres", "5000 litres", "10000 litres"],
+        correct: 2,
+        explanation: "Une étude a montré que les doubles chasses permettent d'économiser jusqu'à 50% d'eau (3-6L) par rapport aux systèmes classiques de 9L ou plus à chaque chasse. BOOM ! Facture moins chère !"
       },
       { // correct = D (3)
-        text: "En Suisse, quelle part de la consommation d'eau potable domestique les toilettes représentent-elles environ ?",
-        options: ["10 %", "15 %", "20 %", "30 %"],
-        correct: 3,
-        explanation: "Les toilettes représentent environ 30 % de la consommation d'eau potable domestique en Suisse. C'est le poste de consommation le plus important devant la douche (~30 % aussi) et le linge (~15 %)."
+        text: "Combien d’eau consomme en moyenne un bain ?",
+        options: ["80 à 100 litres", "100 à 150 litres", "150 à 200 litres", "200+ litres"],
+        correct: 2,
+        explanation: "Remplir une baignoire nécessite beaucoup plus d’eau qu’une douche. Un bain moyen utilise environ 150 à 200 litres d’eau, soit 3 fois plus qu’une douche rapide."
       },
       { // correct = A (0)
-        text: "Qu'est-ce qu'une chasse d'eau à double commande (\"dual flush\") ?",
+        text: "Combien de litres d’eau faut-il pour fabriquer votre jean ?",
         options: [
-          "Un système proposant deux volumes d'eau selon les besoins : petit (3L) ou grand rinçage (6L)",
-          "Une chasse déclenchée automatiquement par un capteur de mouvement",
-          "Un système qui filtre et recycle l'eau utilisée",
-          "Une chasse alimentée uniquement par de l'eau de pluie récupérée"
-        ],
-        correct: 0,
-        explanation: "Le dual flush propose deux boutons : un petit rinçage (~3L) pour les urines et un grand rinçage (~6L) pour les matières fécales. Bien utilisé, il peut réduire de 50 % la consommation liée aux toilettes."
-      },
-      { // correct = C (2)
-        text: "Si une chasse d'eau présente une fuite silencieuse (invisible à l'oeil nu), combien de litres peut-elle gaspiller par jour ?",
-        options: ["5 litres", "20 litres", "200 à 600 litres", "5 000 litres"],
-        correct: 2,
-        explanation: "Une fuite silencieuse peut gaspiller entre 200 et 600 litres d'eau par jour — soit l'équivalent de plusieurs baignoires. On la détecte facilement en ajoutant quelques gouttes de colorant alimentaire dans le réservoir."
-      },
-      { // correct = B (1)
-        text: "Quelle technologie permet de réutiliser les eaux grises (douche, lavabo) pour alimenter les chasses d'eau ?",
-        options: [
-          "Le filtre à osmose inverse",
-          "Le système de recyclage des eaux grises",
-          "Le traitement UV de l'eau potable",
-          "La citerne de récupération des eaux de toiture uniquement"
+          "4500 litres",
+          "11'000 litres",
+          "15'000 litres",
+          "22'000 litres"
         ],
         correct: 1,
-        explanation: "Les systèmes de recyclage des eaux grises récupèrent les eaux légèrement utilisées (douche, lavabo) pour les réutiliser dans les chasses d'eau. Ils peuvent réduire la consommation d'eau potable de 30 % dans un bâtiment."
-      },
-      { // correct = D (3)
-        text: "En Suisse, quelle est la consommation moyenne d'eau potable par habitant et par jour (usage domestique inclus) ?",
-        options: ["50 litres", "80 litres", "120 litres", "162 litres"],
-        correct: 3,
-        explanation: "La consommation moyenne en Suisse est d'environ 162 litres par personne et par jour, eau industrielle et agricole non comprise. C'est l'une des consommations les plus élevées d'Europe."
-      },
-      { // correct = A (0)
-        text: "Quel geste simple (sans remplacement du mécanisme) permet de réduire le volume d'eau de la chasse d'eau ?",
-        options: [
-          "Placer une bouteille remplie d'eau dans le réservoir pour réduire son volume utile",
-          "Tirer la chasse moins fort pour limiter l'écoulement",
-          "Utiliser du papier toilette recyclé",
-          "Fermer le robinet d'arrivée d'eau après chaque passage"
-        ],
-        correct: 0,
-        explanation: "Placer une bouteille de 1 litre remplie d'eau dans le réservoir réduit mécaniquement le volume de chaque chasse d'autant. C'est une solution gratuite et immédiate pour économiser sans remplacer l'équipement."
+        explanation: "La fabrication d’un jeans implique la culture du coton, la teinture et le tissage ce qui ramène a ces 11'000 litres d’eau."
       },
       { // correct = C (2)
-        text: "Environ combien de fois par jour une personne utilise-t-elle les toilettes en moyenne ?",
-        options: ["2 fois", "4 fois", "6 à 8 fois", "12 fois"],
+        text: "Combien de litre d’eau consomme une lessive ?",
+        options: ["40 à 80 litres", "100 litres", "100 à 300 litres", "1000 litres"],
+        correct: 0,
+        explanation: "Explications : Généralement, une machine consomme entre 40 et 80 litres d'eau par cycle. Prenez une moyenne haute (65 - 70 litres) pour une machine ancienne de grande capacité, une moyenne basse (45 - 50 litres) pour une machine récente de petite capacité."
+      },
+      { // correct = B (1)
+        text: "Dans la vie d’un(e) Suisse(sse). Combien consomme-t-on d’eau par an à la maison, minimum ?",
+        options: [
+          "8000 à 12'000 litres",
+          "12'000 à 24'000 litres",
+          "40'000 litres",
+          "55'000 litres"
+        ],
+        correct: 3,
+        explanation: "Eh oui, quand on fait le compte, ça monte vite. Soit 150 litres d’eau par jour ce qui représente environ une baignoire par jour."
+      },
+      { // correct = D (3)
+        text: "Combien d’eau peut gaspiller un robinet laissé ouvert pendant le brossage des dents d’environ 3 minutes ?",
+        options: ["3 litres", "8 litres", "10 à 15 litres", "20+ litres"],
         correct: 2,
-        explanation: "Une personne utilise les toilettes en moyenne 6 à 8 fois par jour. Multiplié par 365 jours et par le volume d'une chasse, cela représente des milliers de litres d'eau potable par an et par personne."
+        explanation: "Si le robinet reste ouvert pendant environ 3 minutes, il peut gaspiller 10 à 15 litres d’eau. Fermer le robinet permet donc d’économiser beaucoup d’eau."
+      },
+      { // correct = A (0)
+        text: "Quel équipement permet de réduire la consommation d’eau ?",
+        options: [
+          "Un pommeau de douche ultra puissant",
+          "Un limitateur d'eau pour les robinets",
+          "Une chasse d'eau double",
+          "Un cendrier"
+        ],
+        correct: 1,
+        explanation: "Cette élément peut réduire la consommation d’eau jusqu’à 50%, tout en gardant une bonne pression.."
+      },
+      { // correct = C (2)
+        text: "Combien d’eau peut perdre un robinet qui fuit deux gouttes par seconde pendant une journée ?",
+        options: ["28 litres", "32 litres", "36 litres", "100 litres"],
+        correct: 2,
+        explanation: "36 litres d’eau potable perdus quotidiennement. Si c’est de l’eau chaude qui fuit, c’est aussi un important gaspillage d’énergie : chaque année environ 60 litres de mazout."
       },
       { // correct = B (1)
         text: "Quelle norme ou certification garantit l'efficacité et le volume certifié d'une chasse d'eau pour les WC vendus en Europe ?",
@@ -451,15 +451,15 @@
         explanation: "La norme européenne EN 14055 définit les exigences techniques pour les WC et chasses d'eau, notamment les volumes de rinçage. Le label WELL intègre aussi les critères de consommation d'eau dans les bâtiments certifiés."
       },
       { // correct = D (3)
-        text: "Quelle mesure a été introduite en Suisse pour encourager les ménages à réduire leur consommation d'eau ?",
+        text: "Combien de litre d'eau consomme en moyenne une douche de 15 minutes ?",
         options: [
-          "L'interdiction des baignoires dans les nouvelles constructions",
-          "Une taxe nationale sur la consommation d'eau au-delà de 100 L/jour",
-          "L'obligation d'installer des compteurs intelligents dans tous les bâtiments",
-          "La tarification progressive de l'eau : plus on consomme, plus le prix unitaire augmente"
+          "15 litres",
+          "30 litres",
+          "60 litres",
+          "90 litres"
         ],
         correct: 3,
-        explanation: "Plusieurs communes suisses ont adopté une tarification progressive de l'eau potable. Ce mécanisme économique incite les gros consommateurs à réduire leur usage, car chaque tranche supplémentaire est facturée plus cher."
+        explanation: "Une douche consomme environ 6 litres par minute. Une douche de 15 minutes durera alors 90L d'eau."
       }
     ];
 

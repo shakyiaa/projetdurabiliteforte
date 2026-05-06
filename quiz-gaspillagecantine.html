@@ -236,7 +236,7 @@
 
     <div class="quiz-header">
       <div class="quiz-badge">🍱 Durabilité forte</div>
-      <h1>Gaspillage alimentaire <em>en cantine</em></h1>
+      <h1>Gaspillage alimentaire <em>à la cantine et à la maison</em></h1>
       <p>Des tonnes de nourriture finissent à la poubelle chaque jour dans les cantines scolaires. Mesurez l'ampleur du problème et découvrez les solutions.</p>
     </div>
 
@@ -374,53 +374,53 @@
     const questions = [
       { // correct = C (3)
         text: "Combien de personnes souffrent de la faim dans le monde ?",
-        options: ["Environ 100 millions", "Environ 300 millions", "Environ 500 millions"],
-        correct: 2,
-        explanation: "Selon la FAO, environ 670 millions de personnes souffrent encore de la faim dans le monde, pendant qu'on jette des millions de tonnes de nourriture chaque année. Cela représente plus de 74 fois la population suisse."
+        options: ["Environ 100 millions", "Environ 670 millions", "Environ 300 millions"],
+        correct: 1,
+        explanation: "Environ 670 millions de personnes souffrent encore de la faim dans le monde, cela représente plus de 74 fois la population suisse. Et tout ça alors qu'on jette des millions de tonnes de nourriture chaque année."
       },
       { // correct = D (3)
-        text: "Combien de nourriture est jetée chaque année dans le monde ?",
+        text: "Combien de tonnes de nourriture est jetée chaque année dans le monde ?",
         options: [
-          "500 millions de tonnes", "800 millions de tonnes", "1 milliard de tonnes", "2 milliards de tonnes"
+          "500 millions de tonnes", "800 millions de tonnes", "2 milliards de tonnes", "1 milliard de tonnes"
         ],
-        correct: 2,
+        correct: 3,
         explanation: "Environ 1 milliard de tonnes de nourriture est gaspillée chaque année à l'échelle mondiale. C'est un tiers de toute la production alimentaire de la planète."
       },
       { // correct = D (3)
-        text: "Pourquoi est-il préférable d'acheter des aliments locaux pour l'environnement ?",
+        text: "Pourquoi est-il préférable, pour l’environnement, d'acheter des aliments locaux ? ",
         options: [
-          "Pour réduire le goût", "Pour augmenter le prix uniquement", "Pour réduire l'impact du transport", "Ça ne change rien"
+          "Pour réduire l'impact du transport", "Pour augmenter le prix", "Pour réduire le prix", "Ça ne change rien"
         ],
-        correct: 2,
-        explanation: "Moins de transport signifie moins d'émissions de $CO_2$. Les aliments locaux parcourent moins de kilomètres avant d'arriver dans ton assiette."
+        correct: 0,
+        explanation: "Les aliments locaux parcourent moins de kilomètres avant d'arriver dans ton assiette. Moins de transport signifie moins de pollution."
       },
       { // correct = B (1)
-        text: "Pourquoi  jeter  de la nourriture est-il si grave  ?",
-        options: ["Ça ne change rien", "Ça coûte seulement de l'argent", "Ça gaspille aussi eau, énergie et terres agricoles", "Ça libère de l'espace"],
-        correct: 1,
+        text: "Pourquoi  jeter  de la nourriture est-il si grave ?",
+        options: ["Ça ne change rien", "Ça coûte seulement de l'argent", "Après la poubelle sent mauvais", "Ça gaspille aussi eau, énergie et terres agricoles"],
+        correct: 3,
         explanation: "Quand on jette un aliment, on gaspille toutes les ressources qui ont été nécessaires pour le produire : l'eau, l'énergie, les terres, et le travail humain."
       },
       { // correct = C (2)
         text: "D'après toi, quel aliment pollue le plus la planète ?",
         options: [
-          "Les légumes",
+          "La viande",
           "Les fruits",
           "Les céréales",
-          "La viande"
+          "Les légumes"
         ],
-        correct: 3,
+        correct: 0,
         explanation: "La viande — et surtout le bœuf — a un impact environnemental très élevé. Pour produire 1 kg de bœuf, il faut environ 15 000 litres d'eau et beaucoup plus de terres que pour des légumes."
       },
       { // correct = A (0)
-        text: "Si tu réduis ta consommation de viande, que se passe-t-il pour ton impact sur la planète ?",
+        text: "Jusqu’à combien de temps après la date limite de consommation est-il possible de consommer un yogourt ?",
         options: [
-          "Rien ne change",
-          "Tu réduis fortement ton empreinte carbone",
-          "La pollution augmente",
-          "Tu gaspilles plus"
+          "Jusqu’à 2 jours après la date limite de consommation",
+          "Jusqu’à 2 semaines après la date limite de consommation",
+          "Jusqu’à 2 mois après la date limite de consommation",
+          "Il ne faut surtout pas le consommer ! "
         ],
         correct: 1,
-        explanation: "Réduire sa consommation de viande est l'une des actions individuelles les plus efficaces pour diminuer son empreinte carbone. Même une ou deux fois par semaine, ça fait une vraie différence."
+        explanation: "En cas de stockage correct (frigo), tu peux en principe consommer un yogourt sans crainte pendant au moins 14 jours après sa date limite. Et pour d’autres aliments (Pâtes, chocolat, etc.), c’est même jusqu’à 1 an après la date limite !"
       },
       { // correct = D (3)
         text: "Dans une cantine scolaire, combien de grammes de nourriture sont gaspillés en moyenne par élève et par repas ?",
@@ -430,8 +430,8 @@
           "120g — l'équivalent d'un yaourt",
           "200g — l'équivalent d'une pomme"
         ],
-        correct: 3,
-        explanation: "En moyenne, 120g de nourriture sont gaspillés par élève à chaque repas en cantine. Multiplié par tous les élèves, tous les jours de l'année, c'est colossal."
+        correct: 2,
+        explanation: "En moyenne, 120g de nourriture sont gaspillés par élève à chaque repas en cantine. Multiplié par tous les élèves, tous les jours de l'année, c'est énorme."
       },
       { // correct = B (1)
         text: "Si le gaspillage alimentaire était un pays, quel serait son rang mondial en termes d'émissions de gaz à effet de serre ?",
@@ -447,10 +447,10 @@
         text: "Que devient principalement la nourriture qui pourrit dans les décharges sans oxygène ?",
         options: [
           "Elle se transforme en oxygène pur.",
-          "Elle ne produit rien du tout.",
-          "Elle libère du méthane, un gaz 25 fois plus puissant que le CO2 pour le réchauffement climatique."
+          "Elle libère du méthane, un gaz 25 fois plus puissant que le CO2 pour le réchauffement climatique.",
+          "Elle disparaît simplement."
         ],
-        correct: 2,
+        correct: 1,
         explanation: "Jeter de la nourriture ne gaspille pas seulement des ressources, cela pollue activement l'air en dégageant du méthane lors de sa décomposition dans les poubelles fermées."
       },
       { // correct = A (0)
@@ -461,7 +461,7 @@
           "À toute l'eau qu'une personne boit en 10 ans."
         ],
         correct: 2,
-        explanation: "La production d'un seul kilo de viande de bœuf est extrêmement gourmande en ressources : elle consomme environ 15 000 litres d'eau, ce qui représente plus que la consommation d'eau de boisson d'un individu sur une période de 10 ans."
+        explanation: "Diminue ta consommation de viande. Sers-toi de petite quantité de nourriture afin d’être sûr de terminer ton assiette. Si tu n’as pas terminé ton assiette, garde tes restes au frigo pour les manger plus tard. Un des tes aliments a dépassé la date limite de consommation ? Utilise ce site pour vérifier si tu peux encore le consommer : Vérifie la durée de conservation ! - foodwaste.ch "
       }
     ];
 
